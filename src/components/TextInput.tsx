@@ -23,9 +23,9 @@ export interface TextInputIconProps {
 
 function TextInputIcon(props: TextInputIconProps) {
     return (
-        <slot className='w-6 h-6 text-gray-400'>
+        <Slot className='w-6 h-6 text-gray-400'>
             {props.children}
-        </slot>
+        </Slot>
     )
 }
 
@@ -35,8 +35,7 @@ export interface TextInputInputProps extends InputHTMLAttributes<HTMLScriptEleme
 
 function TextInputInput(props: TextInputInputProps) {
     return(
-    
-        <input 
+        <input
             className="bg-transparent flex-1 outline-none text-gray-100 text-xs placeholder:text-gray-400"
             {...props}
         />
